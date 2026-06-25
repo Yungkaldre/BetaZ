@@ -1,0 +1,73 @@
+/* External CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Internal styles for the table */
+.styled-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Custom paragraph styles */
+.custom-paragraph {
+    /* Inline style will override this */
+    background-color: #e0e7ff;
+    color: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation link pseudo-classes */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.nav-link:visited {
+    color: #7c3aed;
+}
+
+.nav-link:active {
+    color: #5b21b6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .styled-table {
+        font-size: 0.9rem;
+    }
+    
+    .custom-paragraph {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
